@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Exercises</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- LANDING PAGE -->
+  <section id="landing">
+    <h1>JavaScript Exercises</h1>
+    <p>Explore interactive JavaScript activities and run them live.</p>
+    <button id="enterBtn">Get Started</button>
+  </section>
+
+  <!-- MAIN SITE -->
+  <div id="mainSite" class="hidden">
+
+    <header>
+      <div class="logo">⚡ JS Exercises</div>
+      <nav>
+        <button id="homeBtn" class="nav-btn active">Home</button>
+        <button id="exercisesBtn" class="nav-btn">Exercises</button>
+        <button id="aboutBtn" class="nav-btn">About</button>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="page">
+      <h2>Welcome to JavaScript Exercises</h2>
+      <p>This project demonstrates core JavaScript concepts through hands-on interactive exercises.</p>
+    </section>
+
+    <!-- EXERCISES LIST -->
+    <section id="exercises" class="page hidden">
+      <h2>Exercises</h2>
+      <p>Select an exercise set to begin.</p>
+      <div class="exercise-set-grid">
+
+        <div class="exercise-set-card" id="exercise2SetBtn">
+          <div class="set-badge">Set 2</div>
+          <h3>Exercise 2</h3>
+          <p>Output, variables, calculator, user input, conditionals, loops, and DOM interaction.</p>
+          <span class="set-count">7 Activities</span>
+        </div>
+
+        <div class="exercise-set-card" id="exercise3SetBtn">
+          <div class="set-badge">Set 3</div>
+          <h3>Exercise 3</h3>
+          <p>Background color, dark mode, list items, remove element, character count, calculator, image swap, and to-do list.</p>
+          <span class="set-count">8 Activities</span>
+        </div>
+
+        <div class="exercise-set-card" id="exercise4SetBtn">
+          <div class="set-badge">Set 4</div>
+          <h3>Exercise 4</h3>
+          <p>Student Grade Calculator using event listeners and arrow functions.</p>
+          <span class="set-count">1 Activity</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXERCISE 2 ACTIVITY LIST -->
+    <section id="exercise2Page" class="page hidden">
+      <button class="back-link" id="backToExercisesBtn">← Back to Exercises</button>
+      <h2>Exercise 2 — Activities</h2>
+      <p>Choose an activity to run.</p>
+      <div class="activity-list">
+        <div class="activity-card" data-set="2" data-activity="1">
+          <div class="act-number">01</div>
+          <div class="act-info"><h3>Output</h3><p>Display alert and console messages.</p></div>
+          <span class="act-arrow">→</span>
+        </div>
+        <div class="activity-card" data-set="2" data-activity="2">
+          <div class="act-number">02</div>
+          <div class="act-info"><h3>Variables</h3><p>Input name, age, and student status.</p></div>
+          <span class="act-arrow">→</span>
+        </div>
+        <div class="activity-card" data-set="2" data-activity="3">
+          <div class="act-number">03</div>
+          <div class="act-info"><h3>Calculator</h3><p>Perform basic arithmetic on two numbers.</p></div>
+          <span class="act-arrow">→</span>
+        </div>
+        <div class="activity-card" data-set="2" data-activity="4">
+          <div class="act-number">04</div>
+          <div class="act-info"><h3>User Input</h3><p>Display a personalized message using user input.</p></div>
+          <span class="act-arrow">→</span>
+        </div>
+        <div class="activity-card" data-set="2" data-activity="5">
+          <div class="act-number">05</div>
+          <div class="act-info"><h3>Conditional</h3><p>Check if you meet the age requirement (18+).</p></div>
+          <span class="act-arrow">→</span>
+        </div>
+        <div class="activity-card" data-set="2" data-activity="6">
+          <div class="act-number">06</div>
+          <div class="act-info"><h3>Loops</h3><p>Count up and down using for and while loops.</p></div>
+          <span class="act-arrow">→</span>
+        </div>
+        <div class="activity-card" data-set="2" data-activity="7">
+          <div class="act-number">07</div>
+          <div class="act-info"><h3>JS & HTML Interaction</h3><p>Interact with the page using JavaScript.</p></div>
+          <span class="act-arrow">→</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXERCISE 3 ACTIVITY LIST -->
+    <section id="exercise3Page" class="page hidden">
+      <button class="back-link" id="backToExercisesBtn3">← Back to Exercises</button>
+      <h2>Exercise 3 — Activities</h2>
+      <p>Choose an activity to run.</p>
+      <div class="activity-list">
+        <div class="activity-card" data-set="3" data-activity="1">
+          <div class="act-number">01</div>
+          <div class="act-info"><h3>Change Background Color</h3><p>Click a button to change the page background color.</p></div>
+          <span class="act-arrow">→</span>
+        </div>
+        <div class="activity-card" data-set="3" data-activity="2">
+          <div class="act-number">02</div>
+          <div class="act-info"><h3>Dark Mode Toggle</h3><p>Toggle between light and dark mode.</p></div>
+          <span class="act-arrow">→</span>
+        </div>
+        <div class="activity-card" data-set="3" data-activity="3">
+          <div class="act-number">03</div>
+          <div class="act-info"><h3>Add List Items</h3><p>Add new items to a list by clicking a button.</p></div>
+          <span class="act-arrow">→</span>
+        </div>
+        <div class="activity-card" data-set="3" data-activity="4">
+          <div class="act-number">04</div>
+          <div class="act-info"><h3>Remove Paragraph</h3><p>Remove a paragraph when a button is clicked.</p></div>
+          <span class="act-arrow">→</span>
+        </div>
+        <div class="activity-card" data-set="3" data-activity="5">
+          <div class="act-number">05</div>
+          <div class="act-info"><h3>Character Counter</h3><p>Display the number of characters typed in a field.</p></div>
+          <span class="act-arrow">→</span>
+        </div>
+        <div class="activity-card" data-set="3" data-activity="6">
+          <div class="act-number">06</div>
+          <div class="act-info"><h3>Addition Calculator</h3><p>Add two numbers using input fields.</p></div>
+          <span class="act-arrow">→</span>
+        </div>
+        <div class="activity-card" data-set="3" data-activity="7">
+          <div class="act-number">07</div>
+          <div class="act-info"><h3>Change Image</h3><p>Swap between images when a button is clicked.</p></div>
+          <span class="act-arrow">→</span>
+        </div>
+        <div class="activity-card" data-set="3" data-activity="8">
+          <div class="act-number">08</div>
+          <div class="act-info"><h3>Mini To-Do List</h3><p>Add and remove tasks in a simple to-do list.</p></div>
+          <span class="act-arrow">→</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXERCISE 4 PAGE -->
+    <section id="exercise4Page" class="page hidden">
+      <button class="back-link" id="backToExercisesBtn4">← Back to Exercises</button>
+      <h2>Exercise 4 — Student Grade Calculator</h2>
+      <p>Set the number of quizzes and MCOs, then generate the fields.</p>
+      <div class="demo-box">
+        <div class="grade-form">
+          <label>Number of Quizzes</label>
+          <input type="number" id="numQuizzes" placeholder="e.g. 3" min="1"/>
+          <label>Number of MCOs</label>
+          <input type="number" id="numMcos" placeholder="e.g. 2" min="1"/>
+          <div class="grade-buttons">
+            <button id="generateFieldsBtn">Generate Fields</button>
+          </div>
+        </div>
+        <div id="scoreFields"></div>
+        <div id="gradeResult" class="output-text" style="display:none;"></div>
+      </div>
+    </section>
+
+    <!-- ACTIVITY RUNNER PAGE -->
+    <section id="activityPage" class="page hidden">
+      <button class="back-link" id="backToExercise2Btn">← Back</button>
+      <h2 id="activityTitle"></h2>
+      <p id="activityDescription"></p>
+      <div id="activityDemo" class="demo-box"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="page hidden">
+      <h2>About This Project</h2>
+      <p>This website was built to practice JavaScript fundamentals using interactive prompts, alerts, conditionals, loops, and DOM manipulation.</p>
+      <div class="about-card">
+        <span>👨‍💻</span>
+        <div>
+          <strong>Created by Mark Justin Concon</strong>
+          <p>A beginner JavaScript project exploring core programming concepts.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 JavaScript Exercises Project | Created by Mark Justin Concon</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
